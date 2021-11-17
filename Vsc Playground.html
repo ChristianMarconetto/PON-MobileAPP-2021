@@ -1,63 +1,6 @@
 Multi-Cursor Editing
 <style>
-    #p1 {
-        back CIAO #ff0000;
-    }
-
-    /* red in HEX format */
-    #p2 {
-        back CIAO hsl(120, 100%, 50%);
-    }
-
-    /* green in HSL format */
-    #p3 {
-        back CIAO rgba(0, 4, 255, 0.733);
-    }
-
-    /* blue with alpha channel in RGBA format */
+#p1 {backModificato: #ff0000;}                /* red in HEX format */
+#p2 {backModificato: hsl(120, 100%, 50%);}    /* green in HSL format */
+#p3 {backModificato: rgba(0, 4, 255, 0.733);} /* blue with alpha channel in RGBA format */
 </style>
-IntelliSense
-<script>
-    const canvas = document.querySelector('canvas');
-    const context = canvas.getContext('2d');
-
-    context.strokeStyle = 'blue';
-    <context class="#ff0000" id="ff0000"></context>
-</script>
-
-Line Actions
-<script>
-    {
-        "name": "John",
-            "second name": "Paolo",
-                "second name": "Paolo",
-                    "age": 31,
-                        "city": "New York"
-    }
-</script>
-Rename Refactoring
-<script>
-    // Reference the function
-    new Libro("War of the Worlds", "H G Wells");
-    new Libro("The Martian", "Andy Weir");
-
-    /**
-     * Represents a book.
-     *
-     * @param {string} title Title of the book
-     * @param {string} author Who wrote the book
-     */
-    function Libro(title, author) {
-        this.title = title;
-        this.author = author;
-    }
-</script>
-Formatting
-<script>
-    const cars = ["🚗", "🚙", "🚕"];
-
-    for (const car of cars) {
-        // Drive the car
-        console.log(`This is the car ${car}`);
-    }
-</script>
